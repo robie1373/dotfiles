@@ -37,6 +37,6 @@ if [ ! -f "$HOME/.config/starship.toml" ]; then
 		echo "\nOk. moving on...\n"
 	fi
 else
-	eval "$(starship init zsh)"
+
 fi
 

@@ -1,0 +1,2 @@
+eval "$(starship init zsh)"
+echo  "Theme handled by ~/.config/starship.toml"

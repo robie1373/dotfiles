@@ -1,2 +1,4 @@
-**/chezmoi/**
 README.md
+**/chezmoi.toml
+**/chezmoistate.boltdb
+**/gh/hosts.yml

@@ -1,3 +1,8 @@
+if [ ! -f "/opt/homebrew/bin/brew" ]; then
+echo "Installing Homebrew becasue it is missing..."
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 alias ll="ls -l"

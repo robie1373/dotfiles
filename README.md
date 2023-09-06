@@ -1,5 +1,5 @@
 # dotfiles
-Using [Chezmois](https://www.chezmoi.io/) to manage dotfiles. I am also doing some bootstrapping via [Homebrew](https://brew.sh/).
+Using [Chezmoi](https://www.chezmoi.io/) to manage dotfiles. I am also doing some bootstrapping via [Homebrew](https://brew.sh/).
 
 # Howto
 1. Manually download bootstrap.sh and put it in your home directory.

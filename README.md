@@ -10,3 +10,6 @@ Using [Chezmoi](https://www.chezmoi.io/) to manage dotfiles. I am also doing som
 [Installing Appstore apps with brew](https://www.moncefbelyamani.com/how-to-install-xcode-with-homebrew/#how-to-install-xcode-with-homebrew)
 
 [Chezmoi](https://www.chezmoi.io/)
+
+[Getting user input from CLI in zsh](https://stackoverflow.com/questions/15174121/how-can-i-prompt-for-yes-no-style-confirmation-in-a-zsh-script)
+I'm using this to give a little control on what gets installed from .zprofile

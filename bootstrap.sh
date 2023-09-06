@@ -22,3 +22,8 @@ chezmoi --init --apply robie1373
 # Once we have our Brewfile we can use that to install the rest
 echo "/nInstalling the rest. Depending on how much in in here this may take a very long time./n"
 brew bundle
+
+# 1password 8 and the app store are having a hissy fit, so remind yourself
+# to install it manually like a troglodite.
+echo "You still have to instal 1password manually because grrr..."
+open https://1password.com/downloads/mac/

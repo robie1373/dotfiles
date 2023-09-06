@@ -1,1 +1,23 @@
-syntax on
+syntax enable
+set number
+set ts=2
+set autoindent
+set expandtab
+set shiftwidth=2
+set cursorline
+set showmatch
+set incsearch
+set hls
+
+set background=dark
+try
+  colorscheme solarized
+catch
+endtry
+
+if (exists('+colorcolumn'))
+  set colorcolumn=80
+  highlight ColorColumn ctermbg=9
+endif
+
+set guifont=Inconsolata:h14.00 

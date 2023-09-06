@@ -1,0 +1,23 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
+alias ll="ls -l"
+alias la="ls -a"
+
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+export EDITOR=vim
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+
+if [ -f "$HOME/.bash_ps1" ]; then
+. "$HOME/.bash_ps1"
+fi
+
+export PATH="/usr/local/bin:/usr/local/sbin:/Users/$USERNAME/bin:$PATH"
+
+. "$HOME/.cargo/env"
+
+eval "$(starship init zsh)"

@@ -2,3 +2,15 @@
 
 [data]
   email = {{ $email | quote }}
+
+
+[edit]
+    command = "nvim"
+
+[diff]
+  command = "nvim"
+  args = "-d"
+
+[merge]
+  command = "nvim"
+  args = ["-d", "{{ "{{" }} .Destination {{ "}}" }}", "{{ "{{" }} .Source {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]

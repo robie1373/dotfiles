@@ -1,0 +1,10 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+brew "mas"
+brew "starship"
+brew "neovim"
+brew "wget"
+mas "Agenda", id: 1287445660
+mas "Slack", id: 803453959
+mas "Super Agent", id: 1568262835
+

@@ -1,0 +1,9 @@
+tap "osx-cross/avr"
+brew "avrdude"
+brew "glib"
+brew "open-ocd"
+brew "qemu"
+brew "armmbed/formulae/arm-none-eabi-gcc"
+brew "osx-cross/avr/avr-binutils"
+brew "osx-cross/avr/avr-gcc@9"
+

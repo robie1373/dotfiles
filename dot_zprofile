@@ -11,8 +11,12 @@ alias la="ls -a"
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-export EDITOR=nvim
-alias vim="nvim"
+if [ -f "/opt/homebrew/bin/nvim" ]; then
+  export EDITOR=nvim
+  alias vim="nvim"
+else
+  export EDITOR=vim
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm

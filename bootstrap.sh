@@ -22,16 +22,18 @@ brew install chezmoi
 chezmoi init --apply --verbose https://github.com/robie1373/dotfiles.git
 
 # Once we have our Brewfile we can use that to install the rest
+BREWFILEDIR=".brewfiles"
+
 if read -q "choice?Do you want to install the base bundle? (Recommended) [yN]\n"; then
-  brew bundle --file $HOME/Brewfile.base
+  brew bundle --file $HOME/$BREWFILEDIR/Brewfile.base
 fi
 
 if read -q "choice?Do you want to install the coding bundle? [yN]\n"; then
-  brew bundle --file $HOME/Brewfile.coding
+  brew bundle --file $HOME/$BREWFILEDIR/Brewfile.coding
 fi
 
 if read -q "choice?Do you want to install the hareware dev bundle? [yN]\n"; then
-  brew bundle --file $HOME/Brewfile.hardware
+  brew bundle --file $HOME/$BREWFILEDIR/Brewfile.hardware
 fi
 # 1password 8 and the app store are having a hissy fit, so remind yourself
 # to install it manually like a troglodite.

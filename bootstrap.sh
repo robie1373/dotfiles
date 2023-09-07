@@ -35,5 +35,6 @@ if read -q "choice?Do you want to install the hareware dev bundle? [yN]"; then
 fi
 # 1password 8 and the app store are having a hissy fit, so remind yourself
 # to install it manually like a troglodite.
-echo "You still have to instal 1password manually because grrr..."
-open https://1password.com/downloads/mac/
+if read -q "choice?Do you need 1password? It has to be installed manually."; then
+  open https://1password.com/downloads/mac/
+fi

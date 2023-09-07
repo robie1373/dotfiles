@@ -20,9 +20,17 @@ brew install chezmoi
 chezmoi --init --apply robie1373
 
 # Once we have our Brewfile we can use that to install the rest
-echo "/nInstalling the rest. Depending on how much in in here this may take a very long time./n"
-brew bundle
+if read -q "choice?Do you want to install the base bundle? (Recommended) [yN]"; then
+  brew bundle --file $HOME/Brewfile.base
+fi
 
+if read -q "choice?Do you want to install the coding bundle? [yN]"; then
+  brew bundle --file $HOME/Brewfile.coding
+fi
+
+if read -q "choice?Do you want to install the hareware dev bundle? [yN]"; then
+  brew bundle --file $HOME/Brewfile.hardware
+fi
 # 1password 8 and the app store are having a hissy fit, so remind yourself
 # to install it manually like a troglodite.
 echo "You still have to instal 1password manually because grrr..."

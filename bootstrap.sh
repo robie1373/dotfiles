@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 # script to install most apps I require on a new mac.
 
 # start with xcode command line tools
@@ -17,7 +19,7 @@ echo "/nInstalling chezmoi/n"
 brew install chezmoi
 # run chezmoi to get the bootstrap.sh This will also install all your other 
 # dotfiles.
-chezmoi --init --apply robie1373
+chezmoi init --apply --verbose https://github.com/robie1373/dotfiles.git
 
 # Once we have our Brewfile we can use that to install the rest
 if read -q "choice?Do you want to install the base bundle? (Recommended) [yN]"; then

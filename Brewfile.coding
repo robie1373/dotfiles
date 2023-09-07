@@ -1,6 +1,7 @@
 brew "node"
 brew "nvm"
 mas "Xcode", id: 497799835
+cask "visual-studio-code"
 vscode "albert.TabOut"
 vscode "bradlc.vscode-tailwindcss"
 vscode "dbaeumer.vscode-eslint"
